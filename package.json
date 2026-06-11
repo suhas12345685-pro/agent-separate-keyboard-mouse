@@ -21,6 +21,7 @@
     "node": ">=18.0.0"
   },
   "openclaw": {
+    "extensions": ["src/index.ts"],
     "runtimeExtensions": ["dist/index.js"],
     "compat": {
       "pluginApi": ">=2026.5.30"
