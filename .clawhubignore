@@ -1,3 +1,6 @@
+# version control
+.git/
+
 # dev / build
 __pycache__/
 *.pyc
