@@ -1,26 +1,8 @@
 {
-  "name": "agent-separate-keyboard-mouse",
-  "displayName": "Agent Separate Keyboard & Mouse",
+  "id": "agent-separate-keyboard-mouse",
+  "name": "Agent Separate Keyboard & Mouse",
   "version": "1.0.0",
-  "description": "Gives the AI agent its own isolated virtual keyboard and mouse. Controls a dedicated workspace window via Win32 PostMessage so it never steals focus from the user. Supports dynamic skill and tool registration at runtime.",
-  "author": {
-    "name": "Suhas Rudra",
-    "email": "suhas12345685@gmail.com",
-    "username": "suhas12345685-pro"
-  },
-  "license": "MIT",
-  "keywords": [
-    "computer-use",
-    "isolated-input",
-    "virtual-mouse",
-    "virtual-keyboard",
-    "automation",
-    "dynamic-skills",
-    "workspace",
-    "openclaw"
-  ],
-  "packageType": "code-plugin",
-  "platform": ["windows"],
+  "description": "Gives the AI agent its own isolated virtual keyboard and mouse. Controls a dedicated workspace window via Win32 PostMessage so it never steals focus from the user.",
   "mcp": {
     "command": "node",
     "args": ["dist/index.js"],
@@ -28,20 +10,5 @@
       "AGENT_WORKSPACE_TITLE": "Agent Workspace"
     }
   },
-  "skills": [
-    "skills/workspace/agent-workspace.md",
-    "skills/input/isolated-browse.md",
-    "skills/input/isolated-type.md"
-  ],
-  "permissions": ["computer_use"],
-  "install": {
-    "windows": "npm install && npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/suhas12345685-pro/agent-separate-keyboard-mouse"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  }
+  "contracts": {}
 }

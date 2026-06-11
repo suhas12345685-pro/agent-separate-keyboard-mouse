@@ -1,7 +1,7 @@
 {
-  "name": "agent-isolated-input",
+  "name": "@suhas12345685-pro/agent-separate-keyboard-mouse",
   "version": "1.0.0",
-  "description": "Isolated virtual keyboard and mouse for the AI agent — Win32 PostMessage via PowerShell bridge",
+  "description": "Gives the AI agent its own isolated virtual keyboard and mouse via Win32 PostMessage — never steals the user's focus",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
@@ -21,11 +21,16 @@
     "node": ">=18.0.0"
   },
   "openclaw": {
+    "runtimeExtensions": ["dist/index.js"],
     "compat": {
       "pluginApi": ">=2026.5.30"
     },
     "build": {
       "openclawVersion": "2026.6.2"
+    },
+    "install": {
+      "clawhubSpec": "@suhas12345685-pro/agent-separate-keyboard-mouse",
+      "minHostVersion": ">=2026.5.30"
     }
   }
 }
