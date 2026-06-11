@@ -43,13 +43,5 @@
   },
   "engines": {
     "node": ">=18.0.0"
-  },
-  "openclaw": {
-    "compat": {
-      "pluginApi": "1.0"
-    },
-    "build": {
-      "openclawVersion": "1.0.0"
-    }
   }
 }
