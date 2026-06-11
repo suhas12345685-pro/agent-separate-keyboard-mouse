@@ -1,0 +1,22 @@
+# dev / build
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/*.map
+build/
+.venv/
+venv/
+
+# tooling
+.github/
+node_modules/
+*.log
+
+# databases / generated
+*.db
+*.sqlite
+
+# secrets
+.env
+.env.*

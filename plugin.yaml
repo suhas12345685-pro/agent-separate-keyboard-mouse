@@ -1,0 +1,41 @@
+name: agent-isolated-input
+version: 2.0.0
+description: >
+  Gives the AI agent its own isolated virtual keyboard and mouse.
+  Built in TypeScript — the agent controls a dedicated workspace window
+  via Win32 PostMessage so it never steals focus from the user.
+  Supports dynamic tool registration at runtime: drop a .js file in
+  scripts/ or call agent_register_tool to extend the toolset live.
+author: rudra.rakesh@gmail.com
+license: MIT
+keywords:
+  - computer-use
+  - isolated-input
+  - virtual-mouse
+  - virtual-keyboard
+  - automation
+  - dynamic-tools
+  - workspace
+
+mcp:
+  command: node
+  args:
+    - dist/index.js
+  env:
+    AGENT_WORKSPACE_TITLE: "Agent Workspace"
+
+skills:
+  - skills/workspace/agent-workspace.md
+  - skills/input/isolated-browse.md
+  - skills/input/isolated-type.md
+
+permissions:
+  - computer_use
+
+install:
+  windows:
+    command: npm install && npm run build
+  darwin:
+    command: echo "This plugin requires Windows (Win32 API via PowerShell)."
+  linux:
+    command: echo "This plugin requires Windows (Win32 API via PowerShell)."
